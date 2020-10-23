@@ -53,6 +53,7 @@ main {
     border: 1px solid var(--primary-brand-color);
     box-shadow: 1px 1px 12px 1px var(--shadow-gray-light);
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 /* when you hover over the card class, it gives a different color when hovering over */
