@@ -1,37 +1,73 @@
-/* Google Fonts press start 2p */
+/* Google Fonts Press Start 2P*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-
 :root {
     --primary-brand-color: #ff4500;
+    --secondary-brand-color: #1e90ff;
+    --accent-color: #ffd700;
+    --shadow-gray-light: #d3d3d3;
+    --shadow-gray-dark: #989898;
+    --logo-font: 'Press Start 2P', Cursive, Helvetica;
 }
-
-
-
 * {
     box-sizing: border-box;
     margin: 0;
-
 }
-
-body{
+body {
     font-family: Helvetica;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-
 header, footer {
     display: flex;
     align-items: center;
     color: #ffffff;
-    background-color: var(--primary-brand-color);
     width: 100%;
-    /* changing the height will allow you to see the align items better */
     height: 65px;
+    background-color: var(--primary-brand-color);
+}
+header {
+    padding-left: 10px;
+    font-family: var(--logo-font);
+    box-shadow: 1px 1px 12px 5px var(--shadow-gray-light);
+}
+header > h1 {
+    color: var(--accent-color);
+    text-shadow: 1px 1px 3px var(--secondary-brand-color);
+}
+footer {
+    justify-content: center;
 }
 
+/* the flex-grow makes the main section expand fully down */
 main {
-    /* this makes the main stretch to the lowest point that it can which pushes the footer to the bottom */
     flex-grow: 1;
+}
+
+/* box shadow gives it a hover effect */
+.card {
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    margin: 10px;
+    border: 1px solid var(--primary-brand-color);
+    box-shadow: 1px 1px 12px 1px var(--shadow-gray-light);
+    font-size: 30px;
+}
+
+/* when you hover over the card class, it gives a different color when hovering over */
+.card:hover {
+    box-shadow: 1px 1px 15px 10px var(--shadow-gray-dark);
+}
+
+#collection {
+    flex-wrap: wrap;
+}
+.outline {
+    /* border: 1px dotted var(--secondary-brand-color); */
+}
+.flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
