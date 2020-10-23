@@ -24,7 +24,7 @@ const $collection = $('#collection');
     //clickwill only work when the article with class of card is clicked
 $collection.on('click', 'article.card', handleClick)
 
-
+ 
 // Functions 
 
 //call immediately - this could be getData() 
