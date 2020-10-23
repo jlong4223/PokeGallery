@@ -1,0 +1,37 @@
+/* Google Fonts press start 2p */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+:root {
+    --primary-brand-color: #ff4500;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: var(--primary-brand-color);
+    width: 100%;
+    /* changing the height will allow you to see the align items better */
+    height: 65px;
+}
+
+main {
+    /* this makes the main stretch to the lowest point that it can which pushes the footer to the bottom */
+    flex-grow: 1;
+}
